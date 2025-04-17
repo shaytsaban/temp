@@ -13,7 +13,7 @@
             font-family: 'Arial', sans-serif;
             overflow-x: hidden;
             color: #fff;
-            -webkit-text-size-adjust: 100%;
+            -webkit-text-size-ajust: 100%;
         }
 
         .slide-container {
@@ -238,7 +238,7 @@
 
         <!-- Slide 8: The Conservative Chaos -->
         <div class="slide" id="slide-8">
-            <div class JAN="ascii-art">
+            <div class="ascii-art">
      😡🍯
     /  KOBI \
     \   💥 /
@@ -281,41 +281,79 @@
     </div>
 
     <script>
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0; // Start on the first slide (slide-1)
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0; // Start on the first slide (slide-1)
 
-        // Show the current slide
-        slides[currentSlide].classList.add('active');
+            // Show the current slide
+            slides[currentSlide].classList.add('active');
 
-        // Button elements
-        const prevBtn = document.getElementById('prev');
-        const nextBtn = document.getElementById('next');
+            // Button elements
+            const prevBtn = document.getElementById('prev');
+            const nextBtn = document.getElementById('next');
 
-        // Update button states
-        function updateButtons() {
-            prevBtn.disabled = currentSlide === 0;
-            nextBtn.disabled = currentSlide === slides.length - 1;
-        }
-        updateButtons();
-
-        // Move to next slide
-        function goToNextSlide() {
-            if (currentSlide < slides.length - 1) {
-                slides[currentSlide].classList.remove('active');
-                currentSlide++;
-                slides[currentSlide].classList.add('active');
-                updateButtons();
+            // Update button states
+            function updateButtons() {
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === slides.length - 1;
             }
-        }
+            updateButtons();
 
-        // Move to previous slide
-        function goToPrevSlide() {
-            if (currentSlide > 0) {
-                slides[currentSlide].classList.remove('active');
-                currentSlide--;
-                slides[currentSlide].classList.add('active');
-                updateButtons();
+            // Move to next slide
+            function goToNextSlide() {
+                if (currentSlide < slides.length - 1) {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide++;
+                    slides[currentSlide].classList.add('active');
+                    updateButtons();
+                    console.log(`Moved to slide ${currentSlide + 1}`);
+                }
             }
-        }
 
-        // Event listeners for buttons
+            // Move to previous slide
+            function goToPrevSlide() {
+                if (currentSlide > 0) {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide--;
+                    slides[currentSlide].classList.add('active');
+                    updateButtons();
+                    console.log(`Moved to slide ${currentSlide + 1}`);
+                }
+            }
+
+            // Event listeners for buttons
+            nextBtn.addEventListener('click', goToNextSlide);
+            prevBtn.addEventListener('click', goToPrevSlide);
+
+            // Keyboard navigation with debugging
+            document.addEventListener('keydown', (e) => {
+                console.log(`Key pressed: ${e.key}`); // Debug key presses
+                if (e.key === 'ArrowRight' && !e.target.matches('input, textarea, select')) {
+                    e.preventDefault(); // Prevent default scrolling
+                    goToNextSlide();
+                } else if (e.key === 'ArrowLeft' && !e.target.matches('input, textarea, select')) {
+                    e.preventDefault(); // Prevent default scrolling
+                    goToPrevSlide();
+                }
+            });
+
+            // Swipe navigation for touch devices
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            document.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            document.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                if (touchStartX - touchEndX > 50) goToNextSlide();
+                if (touchEndX - touchStartX > 50) goToPrevSlide();
+            });
+
+            // Prevent pinch-to-zoom
+            document.addEventListener('gesturestart', (e) => e.preventDefault());
+        });
+    </script>
+</body>
+</html>
