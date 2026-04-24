@@ -3,248 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📚 LECTURE 1 – COMPLETE 3-HOUR EDITION • What is a Database & Why Excel Fails • ZERO Knowledge Assumed • 100% FREE Cloud Tools • Dr. Shay Tsaban • AI-First</title>
+    <title>CHR Framework - Comparison Draft</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .title { font-family: 'Space Grotesk', sans-serif; }
-        .demo-table td, .demo-table th { padding: 12px; border: 3px solid #f59e0b; }
-        .pause { background: linear-gradient(135deg, #fefce8 0%, #facc15 100%); border: 5px dashed #854d0e; }
-        .action-btn { transition: all 0.3s; }
-        .action-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px #eab308; }
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+        }
+        .paper-container {
+            max-width: 850px;
+            margin: 3rem auto;
+            background: white;
+            padding: 4rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .addition {
+            background-color: #dcfce7;
+            color: #166534;
+            padding: 0 2px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+        .deletion {
+            color: #991b1b;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+        .comment-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.875rem;
+            color: #1e40af;
+            font-style: italic;
+        }
+        .comment-icon {
+            color: #3b82f6;
+            cursor: help;
+            margin-left: 4px;
+            font-size: 0.9rem;
+        }
+        h1, h2, h3 {
+            color: #0f172a;
+            font-weight: 700;
+        }
+        .citation {
+            color: #6366f1;
+            font-weight: 600;
+        }
+        .abstract {
+            background: #f1f5f9;
+            padding: 2rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+        }
+        .meta-info {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+        }
+        .change-marker {
+            display: inline-flex;
+            align-items: center;
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 5px;
+        }
     </style>
 </head>
-<body class="bg-zinc-950 text-white">
-<div class="max-w-7xl mx-auto">
+<body>
 
-<header class="sticky top-0 bg-gradient-to-r from-amber-400 to-orange-500 text-zinc-900 py-5 px-8 flex justify-between items-center z-50 shadow-xl">
-    <div>
-        <h1 class="title text-4xl font-bold">LECTURE 1 • DATABASE FOUNDATIONS</h1>
-        <p class="text-xl">3 FULL HOURS • Practically Everything • You will DO real exercises every 10 minutes • Free cloud only</p>
+    <div class="paper-container">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl mb-4 leading-tight">From Internal Happiness to External Buzz: A Conceptual Framework Linking Corporate Happiness Responsibility to Consumer Responses</h1>
+            <div class="meta-info">
+                <p>Status: Working Draft (Comparative Analysis)</p>
+                <p>Note: <span class="addition">Green text</span> indicates additions to the original submission.</p>
+            </div>
+        </header>
+
+        <section class="abstract">
+            <h2 class="text-xl mb-4">Abstract</h2>
+            <p>
+                This conceptual paper develops a measurement-oriented framework explaining how Corporate Happiness Responsibility (CHR), defined as organizational investments in employee well-being, translates into consumer responses. We challenge the implicit assumption that internal well-being initiatives automatically enhance external brand perceptions <span class="addition">(cf. the "Doing Good leads to Doing Well" fallacy)</span><i class="fas fa-comment-dots comment-icon" title="Expansion: Added specific mention of the 'doing well' fallacy to clarify the theoretical tension in the abstract."></i>. Instead, we propose that this relationship is conditional on perceived authenticity. We introduce an <strong>Authenticity Mediation Model</strong> in which CHR operates as a corporate signal, perceived authenticity functions as an interpretive filter, and consumer responses emerge as both evaluative outcomes, such as trust, and behavioral outcomes, such as word of mouth (WOM). The framework identifies three pathways—quality signaling, authenticity evaluation, and trust erosion—each associated with distinct psychological mechanisms. To enable empirical validation, we propose three constructs: the <em>CHR-WOM Spillover Index</em>, the <em>Authenticity Filter Score</em>, and the <em>Internal-External Gap Metric</em>.
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl mb-4">1. Core Argument</h2>
+            <p>
+                The central claim is that Corporate Happiness Responsibility does not directly translate into positive consumer outcomes. Instead, it functions as a signal that is interpreted by consumers under conditions of partial observability and uncertainty. 
+                <span class="addition">While traditional CSR often focuses on highly visible environmental or philanthropic actions, CHR is inherently "veiled" within the organizational black box.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Added the 'black box' metaphor to emphasize the low visibility of CHR compared to traditional CSR."></i> 
+                As a result, identical CHR investments may generate divergent outcomes depending on how they are evaluated.
+                <span class="addition">This shifting role of the corporation suggests that happiness is not just an internal HR metric, but a fundamental evolution of corporate responsibility <span class="citation">(Tsaban & Shavit, 2026)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Cited Tsaban & Shavit (2026) to ground the idea that CHR is a structural change in the definition of a corporation."></i>
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl mb-4">2. Conceptualization of CHR</h2>
+            <p>
+                Corporate Happiness Responsibility is defined as organizational investments and policies aimed at improving employee well-being, including mental health support, work-life balance, compensation practices, and employee development.
+                <span class="addition">Research indicate that such investments in well-being are not merely altruistic but are potentially beneficial for overall brand equity <span class="citation">(Tsaban & Shavit, 2025)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Cited Tsaban & Shavit (2025) to provide evidence that CHR has external brand value."></i>
+            </p>
+            <p>
+                CHR is conceptualized as a signal with three defining features:
+            </p>
+            <ul class="list-disc ml-8 mt-4 space-y-2">
+                <li>it originates internally </li>
+                <li>it is not directly <span class="deletion">observable to consumers</span> <span class="addition">visible at the point of sale.</span><i class="fas fa-comment-dots comment-icon" title="Edit: Clarified 'not observable' by linking it to the consumer touchpoint."></i></li>
+                <li>it requires <span class="addition">active</span> inference <span class="addition">from secondary cues (e.g., Glassdoor ratings or media leaks).</span><i class="fas fa-comment-dots comment-icon" title="Expansion: Provided examples of how consumers infer CHR since it is not direct."></i></li>
+            </ul>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl mb-4">3. Authenticity as the Key Mechanism</h2>
+            <p>
+                Perceived authenticity is defined as the extent to which consumers perceive alignment between internal corporate practices and their external representations.
+                <span class="addition">Consumers often experience ambivalence when assessing a firm's responsibility engagement, particularly when they suspect a gap between corporate claims and social realities <span class="citation">(Toder-Alon et al., 2019)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Integrated Toder-Alon (2019) to explain why consumers are skeptical/ambivalent about CSR claims."></i>
+            </p>
+            <p>
+                Authenticity functions as an interpretive filter that determines whether CHR signals are:
+                <ul class="list-disc ml-8">
+                    <li>accepted as credible </li>
+                    <li>discounted as symbolic <span class="addition">(or "well-washing")</span><i class="fas fa-comment-dots comment-icon" title="Addition: Coined 'well-washing' to parallel 'green-washing'."></i></li>
+                    <li>or rejected as inconsistent </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl mb-4">4. Outcome Structure</h2>
+            <p>We distinguish between two outcome layers:</p>
+            <ol class="list-decimal ml-8 mt-4 space-y-4">
+                <li>
+                    <strong>Brand trust:</strong> A psychological evaluation reflecting perceived reliability and integrity.
+                </li>
+                <li>
+                    <strong>Word of mouth:</strong> The external expression of consumer evaluations.
+                    <span class="addition">We conceptualize WOM not just as a volume metric, but as a complex set of rhetorics used in social media talk <span class="citation">(Toder-Alon et al., 2016)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Cited Toder-Alon (2016) to elevate the definition of WOM to 'rhetorical talk' rather than just data."></i>
+                    <br>
+                    <span class="addition">In online communities, these rhetorics evolve as the community matures, shifting the interpersonal influence of CHR signals <span class="citation">(Toder-Alon & Brunel, 2007; Alon et al., 2002)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Added the community lifecycle perspective (Alon, 2002) to show how CHR impact changes over time."></i>
+                </li>
+            </ol>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl mb-4">6. Three Pathways</h2>
+            
+            <h3 class="text-xl mt-6 mb-2">6.1 Quality Signal Pathway</h3>
+            <p><strong>Mechanism:</strong> heuristic inference. Consumers infer that firms that treat employees well produce better products or services.</p>
+            <p class="bg-indigo-50 p-3 rounded"><strong>Proposition 1:</strong> Higher levels of CHR increase perceived quality and trust through heuristic processing <span class="addition">especially in service-intensive industries.</span></p>
+
+            <h3 class="text-xl mt-6 mb-2">6.2 Authenticity Evaluation Pathway</h3>
+            <p><strong>Mechanism:</strong> congruence evaluation and skepticism. 
+                <span class="addition">The strength of this evaluation is moderated by the consumer's identity salience and their relationship with the brand community <span class="citation">(Shuv-Ami & Toder-Alon, 2023)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Cited Shuv-Ami & Toder-Alon (2023) to explain why different consumer groups respond differently to CHR."></i>
+            </p>
+
+            <h3 class="text-xl mt-6 mb-2">6.3 Trust Erosion Pathway</h3>
+            <p><strong>Mechanism:</strong> discrepancy detection and institutional mistrust.
+                <span class="addition">When consumers detect discrepancies, they may move from mere skepticism to active brand hatred or aggression, particularly in highly engaged communities <span class="citation">(Shuv-Ami & Toder-Alon, 2022; Icekson et al., 2021)</span>.</span><i class="fas fa-comment-dots comment-icon" title="Addition: Integrated work on brand hatred/aggression to show the dark side of failed CHR."></i>
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl mb-4">References</h2>
+            <div class="text-sm space-y-2 text-slate-600">
+                <p>Alon, A., Brunel, F. F., & Siegal, W. S. (2002). Word-of-mouth and community development stages. <em>Advances in Consumer Research</em>, 29(1), 429-430.</p>
+                <p>Icekson, T., Toder-Alon, A., Shuv-Ami, A., & Sela, Y. (2021). The impact of ageing on aggression among sport fans: the mediating role of fan hatred. <em>International Journal of Sports Marketing and Sponsorship</em>, 22(4), 780-797.</p>
+                <p>Shuv-Ami, A., & Toder-Alon, A. (2022). A new team sport club aggression scale and its relationship with fans’ hatred. <em>International Journal of Sport and Exercise Psychology</em>, 20(5), 1274-1294.</p>
+                <p>Shuv-Ami, A., & Toder-Alon, A. (2023). How do you categorize yourself as a sports fan? A new scale of sports fan identity. <em>Communication & Sport</em>, 11(1), 28-52.</p>
+                <p>Toder-Alon, A., & Brunel, F. F. (2007). Dynamics of community engagement: The role of interpersonal communicative genres. <em>Online Community Evolutions</em>, 34.</p>
+                <p>Toder-Alon, A., Brunel, F. F., & Fournier, S. (2016). Word-of-mouth rhetorics in social media talk. <em>Word of Mouth and Social Media</em>, 41-63.</p>
+                <p>Toder-Alon, A., Rosenstreich, E., & Te'eni Harari, T. (2019). Consumers' ambivalent perspectives on CSR engagement. <em>Corporate Social Responsibility and Environmental Management</em>, 26(4), 872-884.</p>
+                <p>Tsaban, S., & Shavit, T. (2025). Is Investing in Employee Well-Being Beneficial for Brand Equity? <em>Corporate Reputation Review</em>, 1-17.</p>
+                <p>Tsaban, S., & Shavit, T. (2026). Corporate happiness responsibility (CHR)-changing the role of corporations. <em>International Journal of the Economics of Business</em>, 33(1), 123-160.</p>
+            </div>
+        </section>
     </div>
-    <div class="flex items-center gap-4">
-        <div class="text-right">
-            <span id="timer" class="font-mono text-4xl font-bold">00:00</span><br>
-            <progress id="progress" value="0" max="100" class="w-64"></progress>
-            <span class="text-xs">180 min • Real-time</span>
-        </div>
-        <a href="https://sheets.google.com/create" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-2xl font-bold flex items-center gap-2">
-            <i class="fas fa-table"></i> OPEN YOUR GOOGLE SHEET NOW
-        </a>
-        <button onclick="finishLecture()" class="bg-zinc-900 border-2 border-white px-6 py-3 rounded-2xl font-bold">✅ MARK COMPLETE + GET LECTURE 2</button>
-    </div>
-</header>
 
-<div class="flex">
-<!-- SIDEBAR – PRACTICAL NAV -->
-<div class="w-72 bg-zinc-900 p-6 border-r overflow-y-auto">
-    <h3 class="font-bold mb-4">📍 Click any minute marker (super practical)</h3>
-    <div class="space-y-3 text-sm">
-        <button onclick="jump(15)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">0–15 min • Welcome + Data definition + First task</button>
-        <button onclick="jump(45)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">15–45 min • LIVE Google Sheets – Build your coffee shop (DO IT)</button>
-        <button onclick="jump(70)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">45–70 min • 9 REAL disasters + your own test</button>
-        <button onclick="jump(100)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">70–100 min • Database explained with 5 analogies + draw it</button>
-        <button onclick="jump(125)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">100–125 min • Table/Row/Column – 4 interactive exercises</button>
-        <button onclick="jump(150)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">125–150 min • Side-by-side LIVE comparison + edit both</button>
-        <button onclick="jump(170)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded">150–170 min • 8 company stories + ChatGPT prompt you copy-paste</button>
-        <button onclick="jump(180)" class="w-full text-left hover:bg-amber-500 hover:text-zinc-900 px-3 py-2 rounded bg-emerald-600">170–180 min • Homework + Certificate + Next</button>
-    </div>
-    <div class="mt-6 bg-zinc-800 p-4 rounded-3xl text-xs">
-        ✅ FREE TOOLS YOU WILL USE TODAY<br>
-        • Google Sheets (open now)<br>
-        • Google Drive<br>
-        • ChatGPT.com (free)<br>
-        • Claude.ai (free)<br>
-        • This page (save as HTML)
-    </div>
-    <button onclick="resetAll()" class="mt-4 w-full py-3 bg-red-600 rounded-2xl">🔄 Restart Lecture (practice mode)</button>
-</div>
+    <footer class="text-center pb-20 text-slate-400 text-sm">
+        <p>&copy; 2024 CHR Research Framework Project. Comparison Mode Enabled.</p>
+    </footer>
 
-<!-- MAIN CONTENT AREA -->
-<div class="flex-1 p-8 space-y-12">
-
-<div class="flex justify-between items-center bg-zinc-800 px-6 py-3 rounded-3xl">
-    <button onclick="prevStep()" class="px-5 py-2 bg-zinc-700 hover:bg-zinc-600 flex gap-2 items-center"><i class="fas fa-arrow-left"></i> Back 10 min</button>
-    <h2 id="currentTitle" class="title text-3xl font-bold text-amber-400">Step 1 • Welcome &amp; What is Data? (0–15 min)</h2>
-    <button onclick="nextStep()" class="px-5 py-2 bg-gradient-to-r from-amber-400 to-orange-500 text-zinc-900 font-bold">Next 10 min →</button>
-</div>
-
-<!-- STEP 1 – SUPER EXPANDED -->
-<section id="s1">
-<h2 class="text-3xl font-bold flex items-center gap-3">1️⃣ 0–15 min • HELLO + What are data really? (4 tiny practical tasks)</h2>
-<p class="text-lg">You know NOTHING. That’s perfect. I will hold your hand the entire time.</p>
-
-<div class="grid grid-cols-2 gap-6">
-    <div class="bg-zinc-800 p-6 rounded-3xl">
-        <strong>Task 1 – Define data in 10 seconds</strong><br>
-        Anything you can write or record.<br>
-        <input id="dataInput" placeholder="Type your example (e.g. my cat’s name)" class="w-full mt-2 p-2 bg-white text-zinc-900">
-        <button onclick="checkDataInput()" class="mt-2 px-6 py-2 bg-emerald-500">Submit my example → see if correct</button>
-    </div>
-    <div class="bg-zinc-800 p-6 rounded-3xl">
-        <strong>Task 2 – Open Google Drive (free forever)</strong><br>
-        <a href="https://drive.google.com" target="_blank" class="underline text-emerald-400">Click → Create folder called “ShayDB2026”</a>
-        <button onclick="alert('✅ Folder created in your mind and in real life!')" class="block mt-3 bg-white text-zinc-900 px-4 py-1">I created the folder</button>
-    </div>
-</div>
-
-<div class="pause p-6 rounded-3xl">
-    ⏸ PAUSE #1 • Say out loud or type in chat: “Data = anything written down”<br>
-    <button onclick="celebrate(1)" class="bg-emerald-600 px-8 py-3">✅ I said it – continue</button>
-</div>
-
-<h3 class="mt-8 text-xl">Task 3 – Write your first 3 pieces of data in Google Sheets (do it RIGHT NOW)</h3>
-<ol class="list-decimal pl-6 space-y-3">
-    <li>Open <a href="https://sheets.google.com/create" target="_blank" class="underline">this link</a> → name it “MyCoffeeShop”</li>
-    <li>Type in row 1: Customer | Phone | Coffee ordered | Price</li>
-    <li>Add these 3 rows exactly (copy-paste from here):<br>
-        Anna • 050-111222 • Latte • 18<br>
-        Ben • 052-333444 • Espresso • 12<br>
-        Clara • 054-555666 • Cappuccino • 22</li>
-</ol>
-<button onclick="simulateSheetCreated()" class="action-btn bg-orange-500 px-8 py-3 mt-4">✅ I typed the 3 rows – show me next</button>
-</section>
-
-<!-- STEP 2 – LIVE PRACTICAL GOOGLE SHEETS -->
-<section id="s2" class="hidden">
-<h2 class="text-3xl font-bold">2️⃣ 15–45 min • Build Your Real Coffee Shop Sheet (30 minutes of doing!)</h2>
-<div class="bg-white text-zinc-900 p-4 border-4 border-amber-400">
-    <table class="demo-table w-full text-center">
-        <tr class="bg-amber-300"><th>Customer</th><th>Phone</th><th>Order</th><th>Price $</th><th>Date</th></tr>
-        <tr><td>Anna</td><td>050111</td><td>Latte</td><td>18</td><td>2026-03-20</td></tr>
-    </table>
-    <button onclick="addPracticalRow()" class="mt-3 bg-emerald-500 px-5 py-2">➕ Add 2 more rows exactly as I tell you</button>
-    <button onclick="sortDemo()" class="ml-2 bg-blue-500 px-5 py-2">🔀 Sort by price (practical skill)</button>
-</div>
-<p class="mt-4">Now in your real Google Sheet: Add 7 customers total + try to filter “Latte” (Data → Create filter).</p>
-<div class="pause p-6">
-    ⏸ PAUSE #2 • Screenshot your sheet and imagine sending it to me<br>
-    <button onclick="nextStep()">I have 7 rows and a filter → continue</button>
-</div>
-</section>
-
-<!-- STEP 3 – DISASTERS WITH INTERACTIVE TEST -->
-<section id="s3" class="hidden">
-<h2 class="text-3xl font-bold">3️⃣ 45–70 min • 9 Disasters – You will TEST them yourself</h2>
-<div class="grid grid-cols-3 gap-3">
-    <button onclick="testDisaster(1)" class="bg-red-900 p-4 hover:bg-red-700">1. Duplicates • Click to create one</button>
-    <button onclick="testDisaster(2)" class="bg-red-900 p-4 hover:bg-red-700">2. Delete row • Click to see panic</button>
-    <button onclick="testDisaster(3)" class="bg-red-900 p-4 hover:bg-red-700">3. Slow sheet • Simulate 10,000 rows</button>
-</div>
-<p>Now open your Google Sheet and deliberately create disaster #4 (share with yourself twice).</p>
-<button onclick="alert('You just experienced why we need databases!')">I created a real disaster – I feel the pain</button>
-</section>
-
-<!-- STEP 4 – ANALOGIES + DRAW -->
-<section id="s4" class="hidden">
-<h2 class="text-3xl font-bold">4️⃣ 70–100 min • Database = ? (5 analogies you will draw)</h2>
-<ul class="space-y-6">
-    <li>1. Library with drawers • Draw it in Google Drawings (free link below) → <a href="https://docs.google.com/drawings/create" target="_blank">Click & draw 3 drawers</a></li>
-    <li>2. Kitchen cabinets (plates, cups, cutlery)</li>
-    <li>3. Phone contacts app</li>
-</ul>
-<button onclick="drawAnalogyDone()">✅ I drew the library analogy</button>
-</section>
-
-<!-- STEP 5 – 4 INTERACTIVE EXERCISES -->
-<section id="s5" class="hidden">
-<h2 class="text-3xl font-bold">5️⃣ 100–125 min • Master Table / Row / Column – 4 hands-on games</h2>
-<button onclick="game1()" class="block w-full py-4 bg-violet-600">Game 1: Add a new COLUMN called “Email”</button>
-<button onclick="game2()" class="block w-full py-4 bg-violet-600 mt-2">Game 2: Add a new ROW for customer “David”</button>
-<!-- more games with alerts that teach -->
-</section>
-
-<!-- STEP 6 – LIVE COMPARISON -->
-<section id="s6" class="hidden">
-<h2 class="text-3xl font-bold">6️⃣ 125–150 min • Edit Excel version vs Database version side-by-side</h2>
-<div class="grid grid-cols-2 gap-4">
-    <div class="bg-amber-900 p-4">📋 EXCEL (messy) <button onclick="messExcel()">Break it more</button></div>
-    <div class="bg-emerald-900 p-4">🗄️ DATABASE (clean) <button onclick="cleanDB()">Protect it</button></div>
-</div>
-</section>
-
-<!-- STEP 7 – CHATGPT PRACTICAL -->
-<section id="s7" class="hidden">
-<h2 class="text-3xl font-bold">7️⃣ 150–170 min • Copy-paste this exact prompt to ChatGPT right now</h2>
-<pre class="bg-zinc-900 p-4 text-emerald-400 overflow-auto">“Act as my database teacher. I run a coffee shop. Explain in 5 bullet points why I need a database instead of Excel. Use my customer list: Anna, Ben, Clara...”</pre>
-<button onclick="alert('Go to chatgpt.com → paste → read the answer → come back')">✅ I pasted and read the answer</button>
-</section>
-
-<!-- STEP 8 – CERTIFICATE -->
-<section id="s8" class="hidden text-center space-y-8">
-    <h1 class="text-5xl">🎉 YOU JUST COMPLETED 3 HOURS OF PURE PRACTICE!</h1>
-    <p class="text-2xl">You built a real sheet, broke it on purpose, understood every concept, used ChatGPT, drew analogies.</p>
-    <button onclick="giveCertificate()" class="bg-gradient-to-r from-emerald-400 to-cyan-500 text-zinc-900 text-3xl px-12 py-6 rounded-3xl font-bold">DOWNLOAD YOUR CERTIFICATE (simulated) + GET LECTURE 2 FREE</button>
-    <p class="text-sm">Homework (15 min): Add 15 customers + use the prompt above + reply to Shay “Lecture 1 done ✅”</p>
-</section>
-
-<!-- BOTTOM NAV -->
-<div class="flex flex-wrap gap-2 justify-center mt-12">
-    <button onclick="jump(1)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">1</button>
-    <button onclick="jump(2)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">2</button>
-    <button onclick="jump(3)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">3</button>
-    <button onclick="jump(4)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">4</button>
-    <button onclick="jump(5)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">5</button>
-    <button onclick="jump(6)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">6</button>
-    <button onclick="jump(7)" class="px-6 py-2 bg-zinc-700 hover:bg-amber-400">7</button>
-    <button onclick="jump(8)" class="px-6 py-2 bg-emerald-600">8 ✓ DONE</button>
-</div>
-
-<footer class="text-center py-8 text-zinc-400">
-    100% built for Dr. Shay Tsaban • Copy entire code → save as lecture1_practical.html • Works offline • All links free forever<br>
-    <button onclick="alert('Thank you! Lecture 2 (Create first DB with Claude + free cloud DataGrip alternative) is ready when you reply “Lecture 2”')">Send “Lecture 1 finished with all tasks ✅” → Receive Lecture 2 instantly</button>
-</footer>
-
-</div>
-</div>
-</div>
-
-<script>
-let step = 1;
-let time = 0;
-const timerEl = document.getElementById('timer');
-const prog = document.getElementById('progress');
-
-setInterval(()=>{ 
-    time++; 
-    let m = Math.floor(time/60).toString().padStart(2,'0');
-    let s = (time%60).toString().padStart(2,'0');
-    timerEl.textContent = m+":"+s;
-    prog.value = Math.round(time/1.8);
-}, 1000);
-
-function jump(n){ 
-    document.querySelectorAll('section').forEach(s=>s.classList.add('hidden'));
-    if(document.getElementById('s'+n)) document.getElementById('s'+n).classList.remove('hidden');
-    document.getElementById('currentTitle').textContent = `Step ${n} • Practical block`;
-    step = n;
-}
-function nextStep(){ if(step<8){ step++; jump(step); } else finishLecture(); }
-function prevStep(){ if(step>1){ step--; jump(step); } }
-
-function checkDataInput(){ alert("✅ Perfect! Your example is correct data. Great job!"); }
-function celebrate(n){ alert(`🎉 Step ${n} crushed! You are unstoppable.`); }
-function simulateSheetCreated(){ alert("✅ Your Google Sheet now has real data. You just did the most practical thing possible."); nextStep(); }
-function addPracticalRow(){ alert("Rows added! You now have a working mini-database simulation inside this HTML."); }
-function sortDemo(){ alert("Sorted! This is what businesses wish they could do easily in Excel… but can’t reliably."); }
-function testDisaster(n){ alert(`DISASTER #${n} SIMULATED! Feel the pain? This is why we move to databases.`); }
-function drawAnalogyDone(){ alert("Drawing done → You now understand the concept visually. Amazing practical work!"); }
-function game1(){ alert("COLUMN ADDED! You just practiced adding fields – exactly what we do in real DB design."); }
-function game2(){ alert("ROW ADDED! You now own the concept of records."); }
-function messExcel(){ alert("EXCEL BROKE AGAIN 😂"); }
-function cleanDB(){ alert("Database stayed perfect – this is the power!"); }
-function finishLecture(){
-    alert("🎓 FULL 3-HOUR PRACTICAL LECTURE COMPLETED!\n\nYou did:\n• Built real sheet\n• Created disasters on purpose\n• Drew analogies\n• Used ChatGPT prompt\n• Mastered every concept with your own hands\n\nLecture 2 (Designing + creating first real DB with Claude + free tools) is attached in your next message from Shay.\n\nReply to Shay: “Lecture 1 done – all tasks completed ✅ Send Lecture 2”");
-}
-function giveCertificate(){
-    alert("📜 CERTIFICATE GENERATED!\nYou are officially no longer a beginner.\nLecture 2 HTML file coming instantly.");
-    finishLecture();
-}
-function resetAll(){ if(confirm("Reset everything and start practice again?")) location.reload(); }
-
-window.onload = ()=>{ jump(1); console.log("%c🚀 MASSIVELY EXPANDED PRACTICAL 3-HOUR HTML READY\nEvery single minute has a DO-IT-NOW task • Copy and send to students now!", "color:#fcd34d; font-size:18px"); };
-</script>
 </body>
 </html>
